@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentic Home Food</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="first">
+      <header>
+        <div class="logo">JTGeats</div>
+        <nav class="nav-links" id="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="cart">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+          <img src="assets/search.svg" alt="" />
+          <img class="cart-img" src="assets/shopping-bag.svg" alt="" />
+        </div>
+      </header>
+
+      <div id="cart-modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="assets/shopping-bag-cart.svg"
+              alt="Cart Bag"
+              class="cart-icon-placeholder"
+            />
+            <h2>Cart is Empty</h2>
+            <p>Add some items to the cart to checkout</p>
+            <button id="close-modal" class="checkout-btn">Back to Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="main-heading">Authentic Home food in India</h1>
+          <p>
+            JTGeats is a courier service in which authentic home-cooked food is
+            delivered to a customer.
+          </p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search food you love" />
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/cuate.svg" alt="Cooking Illustration" />
+        </div>
+      </section>
+    </div>
+
+    <section class="second">
+      <section class="home-kitchen">
+        <h2>Home Kitchen</h2>
+        <div class="product-grid">
+          <!-- Home-made pizza items -->
+        </div>
+      </section>
+
+      <section class="popular-items">
+        <h2>Popular Items</h2>
+        <div class="inner-second">
+          <img src="./assets/left-arrow.svg" alt="left-arrow" id="left-arrow" />
+          <div class="carousel">
+            <!-- Popular items carousel -->
+          </div>
+          <img src="./assets/right-arrow.svg" alt="right-arrow" id="right-arrow" />
+        </div>
+      </section>
+      
+
+      <button class="dish-modal" id="dish-modal">Request a dish</button>
+
+    </section>
+
+    <div id="dish-modal1" class="modal1">
+        <div class="modal-content1">
+          <h2>Request a Dish</h2>
+          <form>
+            <label for="dish-name">Name*</label>
+            <input type="text" id="dish-name1" placeholder="Enter name of the dish" />
+      
+            <label for="dish-image">Upload an image</label>
+            <input type="url" id="dish-image1" placeholder="Paste a URL" />
+      
+            <div class="modal-buttons1">
+              <button type="button" id="close-modal1" class="cancel-btn1">Cancel</button>
+              <button type="submit" class="submit-btn1">Submit Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <section class="third">
+      <div class="green-background"></div>
+      <section class="home-cooked-delivery">
+        <div class="row1">
+          <h2 style="margin: 0; padding: 0">We are providing best</h2>
+          <h2 style="padding: 0">home cooked food delivery service.</h2>
+          <p style="margin: 0; padding: 0">
+            Away from home and craving the tasty homemade recipes?
+          </p>
+          <p style="margin: 0; padding: 0">
+            Choose from a selection of our delicious home-cooked dishes.
+          </p>
+        </div>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="/path/to/your/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </section>
+
+    <div class="container">
+      <div class="form-container">
+        <div class="form-left">
+          <h3 style="width: 286px">
+            Do you have a question or want to become a seller?
+          </h3>
+          <p style="margin-top: 10px">
+            Fill this form and our manager will contact you next 48 hours.
+          </p>
+          <form>
+            <div class="basic">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your e-mail" />
+            </div>
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="form-right">
+          <div class="image-container">
+            <img src="./assets/contact.svg" alt="Delivery Person" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="header">
+        <div class="logo">JTGeats</div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="cart">
+          <img src="assets/fb.svg" alt="" />
+          <img src="assets/insta.svg" alt="" />
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
