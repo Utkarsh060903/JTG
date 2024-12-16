@@ -18,11 +18,11 @@
           <a href="#">Contact</a>
         </nav>
         <div class="cart">
-            <div class="hamburger" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
           <img src="assets/search.svg" alt="" />
           <img class="cart-img" src="assets/shopping-bag.svg" alt="" />
         </div>
@@ -64,44 +64,48 @@
     <section class="second">
       <section class="home-kitchen">
         <h2>Home Kitchen</h2>
-        <div class="product-grid">
-          <!-- Home-made pizza items -->
-        </div>
+        <div class="product-grid"></div>
       </section>
 
       <section class="popular-items">
         <h2>Popular Items</h2>
         <div class="inner-second">
           <img src="./assets/left-arrow.svg" alt="left-arrow" id="left-arrow" />
-          <div class="carousel">
-            <!-- Popular items carousel -->
-          </div>
-          <img src="./assets/right-arrow.svg" alt="right-arrow" id="right-arrow" />
+          <div class="carousel"></div>
+          <img
+            src="./assets/right-arrow.svg"
+            alt="right-arrow"
+            id="right-arrow"
+          />
         </div>
       </section>
-      
 
       <button class="dish-modal" id="dish-modal">Request a dish</button>
-
     </section>
 
     <div id="dish-modal1" class="modal1">
-        <div class="modal-content1">
-          <h2>Request a Dish</h2>
-          <form>
-            <label for="dish-name">Name*</label>
-            <input type="text" id="dish-name1" placeholder="Enter name of the dish" />
-      
-            <label for="dish-image">Upload an image</label>
-            <input type="url" id="dish-image1" placeholder="Paste a URL" />
-      
-            <div class="modal-buttons1">
-              <button type="button" id="close-modal1" class="cancel-btn1">Cancel</button>
-              <button type="submit" class="submit-btn1">Submit Request</button>
-            </div>
-          </form>
-        </div>
+      <div class="modal-content1">
+        <h2>Request a Dish</h2>
+        <form>
+          <label for="dish-name">Name*</label>
+          <input
+            type="text"
+            id="dish-name1"
+            placeholder="Enter name of the dish"
+          />
+
+          <label for="dish-image">Upload an image</label>
+          <input type="url" id="dish-image1" placeholder="Paste a URL" />
+
+          <div class="modal-buttons1">
+            <button type="button" id="close-modal1" class="cancel-btn1">
+              Cancel
+            </button>
+            <button type="submit" class="submit-btn1">Submit Request</button>
+          </div>
+        </form>
       </div>
+    </div>
 
     <section class="third">
       <div class="green-background"></div>
@@ -116,11 +120,13 @@
             Choose from a selection of our delicious home-cooked dishes.
           </p>
         </div>
+
         <div class="video-container">
-          <video class="video" controls>
-            <source src="/path/to/your/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div id="player"></div>
+
+          <div class="pause-overlay" id="pauseOverlay" style="display: flex">
+            <img src="assets/Arrow.svg" alt="Pause Button" />
+          </div>
         </div>
       </section>
     </section>

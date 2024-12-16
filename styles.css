@@ -28,12 +28,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  padding-right: 100px;
   height: 80px;
   padding-left: 132px;
 }
 
 hamburger {
-  display: none; /* Hide by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -130,7 +131,6 @@ header .cart img {
   margin-bottom: 20px;
 }
 
-/* Heading and Paragraph */
 .modal-body h2 {
   font-size: 28px;
   font-weight: bold;
@@ -149,7 +149,6 @@ header .cart img {
   height: 225px;
 }
 
-/* Button */
 .checkout-btn {
   background-color: #4caf50;
   color: white;
@@ -164,7 +163,6 @@ header .cart img {
   background-color: #45a049;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -229,7 +227,7 @@ header .cart img {
 .search-bar button {
   padding: 10px 20px;
   border: none;
-  background-color: #ffa500; /* Orange */
+  background-color: #ffa500; 
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -238,7 +236,7 @@ header .cart img {
 }
 
 .search-bar button:hover {
-  background-color: #e69500; /* Darker orange */
+  background-color: #e69500;
 }
 
 .hero-image img {
@@ -254,6 +252,10 @@ header .cart img {
 @media screen and (max-width: 768px) {
   .first {
     width: 100%;
+  }
+
+  header .cart{
+    padding-left: 100px;
   }
 
   header {
@@ -272,7 +274,6 @@ header .cart img {
     padding-top: 140px;
   }
 
-  /* Show hamburger menu */
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -317,11 +318,11 @@ header .cart img {
   }
 
   .nav-links {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     background-color: rgba(26, 192, 115, 1);
     position: absolute;
-    top: 80px; /* Below the header */
+    top: 80px;
     left: 0;
     width: 100%;
     padding: 20px 0;
@@ -336,12 +337,10 @@ header .cart img {
     text-decoration: none;
   }
 
-  /* Show the hamburger */
   .hamburger {
     display: flex;
   }
 
-  /* Add active class to show nav */
   .nav-links.active {
     display: flex;
   }
@@ -387,7 +386,6 @@ header .cart img {
   text-decoration-skip-ink: none;
 }
 
-/* Home Kitchen section */
 .home-kitchen {
   color: black;
 }
@@ -476,7 +474,6 @@ header .cart img {
   width: 70px;
 }
 
-/* Popular Items section */
 .popular-items {
   padding: 2rem;
   display: flex;
@@ -573,32 +570,6 @@ header .cart img {
     padding-left: 0;
   }
 
-/* .carousel {
-  gap: 40px;
-}
-
-.carousel .item {
-  border: 1px solid white;
-  border-radius: 15px;
-  text-align: center;
-  color: black;
-  display: flex;
-  flex-direction: column;
-}
-
-.carousel .item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.inner-second {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-} 
-
-/* Base Styles */
 .carousel {
     display: flex;
     gap: 20px;
@@ -608,7 +579,7 @@ header .cart img {
   }
   
   .carousel .item {
-    flex: 0 0 calc(33.333% - 20px); /* 3 items per row for laptops */
+    flex: 0 0 calc(33.333% - 20px);
     border: 1px solid #f2f2f2;
     border-radius: 15px;
     text-align: center;
@@ -623,7 +594,6 @@ header .cart img {
     border-top-right-radius: 15px;
   }
   
-  /* Media Query for Tablets and Smaller Devices */
   @media (max-width: 1024px) {
     .carousel .item {
       flex: 0 0 calc(50% - 20px);
@@ -631,10 +601,9 @@ header .cart img {
     }
   }
   
-  /* Media Query for Mobile Devices */
   @media screen and (max-width: 768px) {
     .carousel .item{
-      flex: 0 0 calc(100% - 20px); /* 1 item per row for mobile */
+      flex: 0 0 calc(100% - 20px);
     }
   }
   
@@ -722,6 +691,7 @@ header .cart img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -350px;
 }
 
 .home-cooked-delivery h2 {
@@ -742,14 +712,39 @@ header .cart img {
 }
 
 .video-container {
-  width: 800px;
-  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
-.video-container video {
+#player {
   width: 100%;
-  height: auto;
+  height: 360px;
 }
+
+.pause-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.pause-overlay img {
+  width: 80px;
+  height: 80px;
+}
+
+
+
 
 .row1 {
   width: 864px;
@@ -776,30 +771,29 @@ header .cart img {
 }
 
 .green-background {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 214px;
-  background: rgba(199, 234, 204, 1);
+ 
   z-index: -1;
+height: 344px;
+top: 516px;
+background: rgba(199, 234, 204, 1);
+position: relative;
+
 }
 
-/* Modal Background */
+
 .modal1 {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.3); 
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure modal is above everything */
+  z-index: 1000;
 }
 
-/* Modal Content */
 .modal-content1 {
   width: 90%;
   height: 90%;
@@ -890,7 +884,6 @@ letter-spacing: -0.012em;
   opacity: 0.9;
 }
 
-/* Hide Scrolling When Modal is Open */
 body.no-scroll {
   overflow: hidden;
 }
@@ -1017,6 +1010,7 @@ body.no-scroll {
     .container{
         width: 100%;
         height: 120vh;
+        margin-top: 100px;
     }
 
     .form-container{
@@ -1071,7 +1065,7 @@ body.no-scroll {
 }
 
 .footer nav a:hover {
-  color: #ffd700; /* Yellow on hover */
+  color: #ffd700;
 }
 
 .footer .cart {
