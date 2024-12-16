@@ -47,7 +47,7 @@ hamburger {
   transition: 0.3s;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
@@ -72,7 +72,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ffd700; 
+  color: #ffd700;
 }
 
 header .cart {
@@ -227,7 +227,7 @@ header .cart img {
 .search-bar button {
   padding: 10px 20px;
   border: none;
-  background-color: #ffa500; 
+  background-color: #ffa500;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -254,7 +254,7 @@ header .cart img {
     width: 100%;
   }
 
-  header .cart{
+  header .cart {
     padding-left: 100px;
   }
 
@@ -347,9 +347,9 @@ header .cart img {
 }
 
 @media screen and (max-width: 480px) {
-    .first{
-        width: 100vw;
-    }
+  .first {
+    width: 100vw;
+  }
   .modal-content {
     width: 90%;
     height: auto;
@@ -484,8 +484,8 @@ header .cart img {
   margin-top: 50px;
 }
 
-.popular-items img{
-    cursor: pointer;
+.popular-items img {
+  cursor: pointer;
 }
 
 .carousel {
@@ -558,55 +558,53 @@ header .cart img {
 }
 
 .inner-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  } 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 
- .add {   
-    width: 20px;
-    height: 20px;
-    padding-left: 0;
-  }
+.add {
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+}
 
 .carousel {
-    display: flex;
-    gap: 20px;
-    overflow: hidden; 
-    scroll-behavior: smooth; 
-    width: 100%; 
-  }
-  
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.carousel .item {
+  flex: 0 0 calc(33.333% - 20px);
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .item img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media (max-width: 1024px) {
   .carousel .item {
-    flex: 0 0 calc(33.333% - 20px);
-    border: 1px solid #f2f2f2;
-    border-radius: 15px;
-    text-align: center;
-    color: black;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(50% - 20px);
   }
-  
-  .carousel .item img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .item {
+    flex: 0 0 calc(100% - 20px);
   }
-  
-  @media (max-width: 1024px) {
-    .carousel .item {
-      flex: 0 0 calc(50% - 20px);
-      
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .carousel .item{
-      flex: 0 0 calc(100% - 20px);
-    }
-  }
-  
+}
 
 .second button {
   margin-left: 44%;
@@ -649,19 +647,19 @@ header .cart img {
     margin-left: -10px;
   }
 
-  .popular-items{
+  .popular-items {
     width: 100%;
     gap: 10px;
     height: 100%;
   }
 
-  .popular-items h2{
+  .popular-items h2 {
     width: 400px;
     text-align: center;
     padding-left: 30px;
   }
 
-  .inner-second{
+  .inner-second {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -669,12 +667,12 @@ header .cart img {
     gap: 100px;
   }
 
-  .second button{
+  .second button {
     margin-left: 100px;
     margin-bottom: 100px;
   }
 
-  .carousel{
+  .carousel {
     width: 100%;
   }
 }
@@ -707,8 +705,8 @@ header .cart img {
   color: rgba(115, 115, 115, 1);
 }
 
-.home-cooked-delivery h4{
-    display: none;
+.home-cooked-delivery h4 {
+  display: none;
 }
 
 .video-container {
@@ -743,9 +741,6 @@ header .cart img {
   height: 80px;
 }
 
-
-
-
 .row1 {
   width: 864px;
   height: 164px;
@@ -771,24 +766,21 @@ header .cart img {
 }
 
 .green-background {
- 
   z-index: -1;
-height: 344px;
-top: 516px;
-background: rgba(199, 234, 204, 1);
-position: relative;
-
+  height: 344px;
+  top: 516px;
+  background: rgba(199, 234, 204, 1);
+  position: relative;
 }
 
-
 .modal1 {
-  display: none; 
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -809,12 +801,12 @@ position: relative;
 .modal-content1 h2 {
   margin-bottom: 1.5rem;
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
-line-height: 20px;
-letter-spacing: -0.012em;
-text-underline-position: from-font;
-margin-top: 40px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-underline-position: from-font;
+  margin-top: 40px;
 }
 
 .modal-content1 label {
@@ -822,17 +814,16 @@ margin-top: 40px;
   text-align: left;
   margin: 1rem 0 0.5rem;
   font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.75px;
-text-underline-position: from-font;
-
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-underline-position: from-font;
 }
 
-.modal-content1 form{
-    margin-top: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+.modal-content1 form {
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .modal-content1 input {
@@ -872,11 +863,10 @@ text-underline-position: from-font;
   cursor: pointer;
 
   font-family: Roboto;
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-letter-spacing: -0.012em;
-
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.012em;
 }
 
 .cancel-btn1:hover,
@@ -888,44 +878,44 @@ body.no-scroll {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px){
-    .third{
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+  .third {
+    width: 100%;
+  }
 
-    .row1{
-        padding-top: 100px;
-        gap: 0;
-    }
+  .row1 {
+    padding-top: 100px;
+    gap: 0;
+  }
 
-    .row1 h2{
-        line-height: 40px;
-        width: 400px;
-    }
+  .row1 h2 {
+    line-height: 40px;
+    width: 400px;
+  }
 
-    .row1 p{
-        width: 300px;
-    }
+  .row1 p {
+    width: 300px;
+  }
 
-    .video{
-        width: 10px;
-        height: 100px;
-        margin-top: 50px;
-    }
+  .video {
+    width: 10px;
+    height: 100px;
+    margin-top: 50px;
+  }
 
-    .green-background{
-        width: 100%;
-    }
+  .green-background {
+    width: 100%;
+  }
 
-    .modal-content1 h2{
-        width: 300px;
-        padding-right: 20px;
-        margin-left: -2px;
-    }
+  .modal-content1 h2 {
+    width: 300px;
+    padding-right: 20px;
+    margin-left: -2px;
+  }
 
-    .modal-content1 form{
-      padding: 0;
-    }
+  .modal-content1 form {
+    padding: 0;
+  }
 }
 
 .container {
@@ -1006,30 +996,30 @@ body.no-scroll {
   gap: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .container{
-        width: 100%;
-        height: 120vh;
-        margin-top: 100px;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 120vh;
+    margin-top: 100px;
+  }
 
-    .form-container{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-    }
+  .form-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 
-    .form-container img{
-        margin-top: -100px;
-        width: 350px;
-        height: 350px;
-    }
+  .form-container img {
+    margin-top: -100px;
+    width: 350px;
+    height: 350px;
+  }
 
-    .form-left{
-        margin-left: 10px;
-    }
+  .form-left {
+    margin-left: 10px;
+  }
 }
 
 .footer {
@@ -1092,23 +1082,23 @@ body.no-scroll {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
-    .header{
-        width: 100%;
-        display: flex;
-        gap: 60px;
-        margin-left: -100px;
-    }
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    margin-left: -100px;
+  }
 
-    .footer{
-        width: 100%;
-    }
-    .header nav{
-        display: none;
-    }
+  .footer {
+    width: 100%;
+  }
+  .header nav {
+    display: none;
+  }
 
-    .horizontal-line{
-        margin-left: -40px;
-        width: 100%;
-    }
+  .horizontal-line {
+    margin-left: -40px;
+    width: 100%;
+  }
 }
