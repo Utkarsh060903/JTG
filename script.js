@@ -118,6 +118,9 @@ homeKitchenData.forEach((item) => {
 
   productElement.innerHTML = `
       <img src=${item.img} alt="${item.name}">
+      <div>
+        <span class="discount">30%</span>
+      </div>
       <div class="product-info">
        <h3>${item.name}</h3>
       <p>${item.price}</p>
